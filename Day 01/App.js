@@ -1,7 +1,7 @@
-function randomNumberGeeratorInRange(min, max) {
+function randomNumberGeneratorInRange(min, max) {
     // write your solution here
 
     return Math.floor(Math.random() * (max - min + 1)) + min
-
 }
-console.log{`My random number: $(randomNumerGeneratorInRange(5, 100)}`);
+
+console.log(`My random number: ${randomNumberGeneratorInRange(5, 100)}`)
