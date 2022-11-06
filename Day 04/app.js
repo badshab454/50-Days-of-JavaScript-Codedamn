@@ -15,11 +15,17 @@ function convertTo24HrsFormat(time) {
         return '00:'+time.charAt(3)+time.charAt(4)
     }
 
-    
+    if(time.substr(5) === 'PM' && parseInt(time.substr(0,2)) < 12) {
+        const newlyGenerateHours = 12 + parseInt(time.substr(0,2))
+        return newlyGenerateHours.toString()+':'+time.charAt(3)+time.charAt(4)
+    }
 
 
 
-    return
+
+
+
+    return time.substr(0,5);
 }
 
 console.log(`Converted time: ${convertTo24HrsFormat(time)}`)
