@@ -19,7 +19,7 @@ function convertTo24HrsFormat(time) {
         return newlyGeneratedHours.toString()+':'+time.charAt(3)+time.charAt(4)
     }
 
-    return time.substr(0,5)
+    return time.substr(0,5);
 }
 
 console.log(`Converted time: ${convertTo24HrsFormat(time)}`)
