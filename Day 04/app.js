@@ -11,7 +11,13 @@ function convertTo24HrsFormat(time) {
         time = time.substr(0,3)+'0'+time.substr(3)
     }
 
+    if (time.substr(5) === 'AM' && time.substr(0,2) === '12') {
+        return '00:'+time.charAt(3)+time.charAt(4)
+    }
+
     
+
+
 
     return
 }
