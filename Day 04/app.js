@@ -7,6 +7,12 @@ function convertTo24HrsFormat(time) {
         time = time.substr(0,3)+'0'+time.substr(3)
     }
 
+    if (Number.isInteger(parseInt(time.charAt(3))) && (time.charAt(4) === 'A' || time.charAt(4) === 'P')) {
+        time = time.substr(0,3)+'0'+time.substr(3)
+    }
+
+    
+
     return
 }
 
